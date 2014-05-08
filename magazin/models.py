@@ -17,16 +17,8 @@ class Category(MPTTModel):
         order_insertion_by = ['name']
 
 
-class Goods(models.Model):
-    name = models.CharField(max_length=255, unique=True)
-    category = models.ForeignKey(Category)
-
-    def __unicode__(self):
-        return self.name
-
-
 class Schema(BaseSchema):
-    pass
+    category = models.ManyToManyField(Category, related_name='category')
 
 
 class Choice(BaseChoice):
@@ -38,15 +30,20 @@ class Attribute(BaseAttribute):
     choice = models.ForeignKey(Choice, blank=True, null=True)
 
 
-class Property(BaseEntity):
-    title = models.CharField(max_length=50)
-    category = models.ManyToManyField(Category)
+class Goods(BaseEntity):
+    name = models.CharField(max_length=255)
+    category = models.ForeignKey(Category)
     attrs = generic.GenericRelation(Attribute, object_id_field='entity_id',
                                     content_type_field='entity_type')
 
+    def __unicode__(self):
+        return self.name
+
     @classmethod
-    def get_schemata_for_model(self):
+    def get_schemata_for_model(cls):
         return Schema.objects.all()
 
-    def __unicode__(self):
-        return self.title
+    def get_schemata_for_instance(self, qs):
+        if hasattr(self, 'category'):
+            return qs.filter(category=self.category)
+        return []

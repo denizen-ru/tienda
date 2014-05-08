@@ -1,6 +1,6 @@
-from models import Property
+from models import Goods
 from eav.forms import BaseDynamicEntityForm
 
 
-class PropertyForm(BaseDynamicEntityForm):
-    model = Property
+class GoodsForm(BaseDynamicEntityForm):
+    model = Goods
