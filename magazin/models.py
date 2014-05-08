@@ -2,7 +2,7 @@ from django.db import models
 from django.contrib.contenttypes import generic
 
 from mptt.models import MPTTModel, TreeForeignKey
-from eav.models import BaseChoice, BaseEntity, BaseSchema, BaseAttribute
+from eav.models import BaseEntity, BaseSchema, BaseAttribute, BaseChoice
 
 
 class Category(MPTTModel):
