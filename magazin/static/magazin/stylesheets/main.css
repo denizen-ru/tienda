@@ -1,0 +1,77 @@
+html {
+    background: #eee;
+}
+
+header h1 {
+    padding: 0.4em 1.1em;
+    color: white;
+    font-weight: normal;
+    font-size: 24px;
+}
+
+header h2 {
+    padding: 0.4em 1.1em;
+    color: white;
+    font-weight: normal;
+    font-size: 20px;
+}
+
+section#main {
+    position: relative;
+    padding: 5em 2em;
+    border-bottom: 1px solid #ccc;
+    min-height: 600px;
+} 
+
+section#main .topRight {
+    position: absolute;
+    right: 20px;
+    top: 70px;
+}
+
+#actions {
+    position: relative;
+}
+
+#actions #add {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.block {
+    display: block;
+}
+
+div.bordered {
+   border: 1px solid #888;
+   border-radius: 3px;
+   padding: 10px;
+}
+
+.comment_head {
+    border-style: solid;
+    border-color: rgba(30,30,30,0.3);
+    border-width: 0 0 1px 0;
+}
+
+.bs-callout {
+  border-left: 3px solid #EEEEEE;
+  margin: 20px 0;
+  padding: 20px;
+}
+
+.bs-callout-danger {
+  background-color: #FDF7F7;
+  border-color: #D9534F;
+}
+
+.del-btn {
+  padding-left: 20px;
+}
+
+.categories-column {
+  padding-right: 8px;
+  margin-right: 5px;
+  border-right: 1px solid;
+}

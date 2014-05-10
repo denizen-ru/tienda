@@ -1,5 +1,6 @@
 from django.db import models
 from django.contrib.contenttypes import generic
+from django.core.urlresolvers import reverse
 
 from mptt.models import MPTTModel, TreeForeignKey
 from eav.models import BaseEntity, BaseSchema, BaseAttribute, BaseChoice
@@ -33,6 +34,7 @@ class Attribute(BaseAttribute):
 class Goods(BaseEntity):
     name = models.CharField(max_length=255)
     category = models.ForeignKey(Category)
+    receipt_date = models.DateTimeField('date of receipt')
     attrs = generic.GenericRelation(Attribute, object_id_field='entity_id',
                                     content_type_field='entity_type')
 

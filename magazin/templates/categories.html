@@ -1,0 +1,16 @@
+{% load mptt_tags %}
+
+<div class="categories-column">
+  <ul class="root">
+    {% recursetree nodes %}
+      <li>
+        <a href="{% url 'magazin:view_goods' node.id %}">{{ node.name }}</a>
+        {% if not node.is_leaf_node %}
+          <ul class="children">
+            {{ children }}
+          </ul>
+        {% endif %}
+      </li>
+    {% endrecursetree %}
+  </ul>
+</div>

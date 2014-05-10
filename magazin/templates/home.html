@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}Magazin{% endblock %}
+
+{% block main %}
+  <div class="pull-left">{% include "categories.html" %}</div>
+  {% if goods %}
+    {% for element in goods %}
+      <div>{{ element.name }}</div>
+    {% endfor %}
+  {% else %}
+    <div>No goods in category</div>
+  {% endif %}
+
+{% endblock %}
