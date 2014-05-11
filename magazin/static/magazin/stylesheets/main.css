@@ -75,3 +75,7 @@ div.bordered {
   margin-right: 5px;
   border-right: 1px solid;
 }
+
+li {
+  list-style-type: disc;
+}

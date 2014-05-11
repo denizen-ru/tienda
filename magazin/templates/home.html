@@ -3,13 +3,29 @@
 {% block title %}Magazin{% endblock %}
 
 {% block main %}
-  <div class="pull-left">{% include "categories.html" %}</div>
-  {% if goods %}
-    {% for element in goods %}
-      <div>{{ element.name }}</div>
-    {% endfor %}
-  {% else %}
-    <div>No goods in category</div>
-  {% endif %}
+
+<div class="row">
+  <div class="pull-left col-md-3">{% include "categories.html" %}</div>
+  <div class="col-md-4">
+    {% if goods %}
+      {% if categories %}
+        {% for category in categories %}
+          <div><b>{{ category.name }}</b></div>
+          {% for element in goods %}
+            {% if element.category.id == category.id %}
+              <div>{{ element.name }}</div>
+            {% endif %}
+          {% endfor %}
+        {% endfor %}
+      {% else %}
+        {% for element in goods %}
+          <div>{{ element.name }}</div>
+        {% endfor %}
+      {% endif %}
+    {% else %}
+      <div>No goods in category</div>
+    {% endif %}
+  </div>
+</div>
 
 {% endblock %}

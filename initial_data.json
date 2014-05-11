@@ -99,14 +99,6 @@
     }
 },
 {
-    "pk": "mv63l2v3k8r2kb6lef508kmkznujc4kx", 
-    "model": "sessions.session", 
-    "fields": {
-        "expire_date": "2014-05-24T05:13:02.694Z", 
-        "session_data": "NzNkY2JjN2U1ODhhMjliMGMzZDExNDQxMTZiZWI0M2MyYjBjZjFjZjp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9pZCI6MX0="
-    }
-},
-{
     "pk": 1, 
     "model": "magazin.category", 
     "fields": {
@@ -192,6 +184,678 @@
 },
 {
     "pk": 1, 
+    "model": "magazin.schema", 
+    "fields": {
+        "category": [
+            1, 
+            7, 
+            2, 
+            6, 
+            5, 
+            3, 
+            4
+        ], 
+        "sortable": false, 
+        "name": "color", 
+        "title": "Color", 
+        "datatype": "text", 
+        "required": false, 
+        "searched": false, 
+        "help_text": "Color of goods", 
+        "filtered": false
+    }
+},
+{
+    "pk": 2, 
+    "model": "magazin.schema", 
+    "fields": {
+        "category": [
+            1, 
+            7, 
+            2, 
+            6, 
+            5, 
+            3, 
+            4
+        ], 
+        "sortable": false, 
+        "name": "weight", 
+        "title": "Weight", 
+        "datatype": "float", 
+        "required": false, 
+        "searched": false, 
+        "help_text": "Weight of goods", 
+        "filtered": false
+    }
+},
+{
+    "pk": 3, 
+    "model": "magazin.schema", 
+    "fields": {
+        "category": [
+            6, 
+            3, 
+            4
+        ], 
+        "sortable": false, 
+        "name": "diagonal", 
+        "title": "Diagonal", 
+        "datatype": "float", 
+        "required": false, 
+        "searched": false, 
+        "help_text": "", 
+        "filtered": false
+    }
+},
+{
+    "pk": 4, 
+    "model": "magazin.schema", 
+    "fields": {
+        "category": [
+            7
+        ], 
+        "sortable": false, 
+        "name": "processor", 
+        "title": "Processor", 
+        "datatype": "text", 
+        "required": false, 
+        "searched": false, 
+        "help_text": "", 
+        "filtered": false
+    }
+},
+{
+    "pk": 5, 
+    "model": "magazin.schema", 
+    "fields": {
+        "category": [
+            1, 
+            7, 
+            2, 
+            6, 
+            5, 
+            3, 
+            4
+        ], 
+        "sortable": false, 
+        "name": "region", 
+        "title": "Region", 
+        "datatype": "text", 
+        "required": false, 
+        "searched": false, 
+        "help_text": "Country of prod\u0433\u0441\u0435\u0448\u0449\u0442", 
+        "filtered": false
+    }
+},
+{
+    "pk": 6, 
+    "model": "magazin.schema", 
+    "fields": {
+        "category": [
+            1, 
+            7, 
+            2, 
+            6, 
+            5, 
+            3, 
+            4
+        ], 
+        "sortable": false, 
+        "name": "price", 
+        "title": "Price", 
+        "datatype": "float", 
+        "required": true, 
+        "searched": false, 
+        "help_text": "Price", 
+        "filtered": false
+    }
+},
+{
+    "pk": 1, 
+    "model": "magazin.attribute", 
+    "fields": {
+        "value_date": null, 
+        "value_text": "Yellow", 
+        "entity_id": 8, 
+        "value_float": null, 
+        "entity_type": 11, 
+        "value_bool": null, 
+        "value_range_max": null, 
+        "choice": null, 
+        "value_range_min": null, 
+        "schema": 1
+    }
+},
+{
+    "pk": 2, 
+    "model": "magazin.attribute", 
+    "fields": {
+        "value_date": null, 
+        "value_text": null, 
+        "entity_id": 8, 
+        "value_float": 6.0, 
+        "entity_type": 11, 
+        "value_bool": null, 
+        "value_range_max": null, 
+        "choice": null, 
+        "value_range_min": null, 
+        "schema": 3
+    }
+},
+{
+    "pk": 3, 
+    "model": "magazin.attribute", 
+    "fields": {
+        "value_date": null, 
+        "value_text": null, 
+        "entity_id": 8, 
+        "value_float": 200.0, 
+        "entity_type": 11, 
+        "value_bool": null, 
+        "value_range_max": null, 
+        "choice": null, 
+        "value_range_min": null, 
+        "schema": 6
+    }
+},
+{
+    "pk": 4, 
+    "model": "magazin.attribute", 
+    "fields": {
+        "value_date": null, 
+        "value_text": "China", 
+        "entity_id": 8, 
+        "value_float": null, 
+        "entity_type": 11, 
+        "value_bool": null, 
+        "value_range_max": null, 
+        "choice": null, 
+        "value_range_min": null, 
+        "schema": 5
+    }
+},
+{
+    "pk": 5, 
+    "model": "magazin.attribute", 
+    "fields": {
+        "value_date": null, 
+        "value_text": null, 
+        "entity_id": 8, 
+        "value_float": 300.0, 
+        "entity_type": 11, 
+        "value_bool": null, 
+        "value_range_max": null, 
+        "choice": null, 
+        "value_range_min": null, 
+        "schema": 2
+    }
+},
+{
+    "pk": 6, 
+    "model": "magazin.attribute", 
+    "fields": {
+        "value_date": null, 
+        "value_text": "Green", 
+        "entity_id": 7, 
+        "value_float": null, 
+        "entity_type": 11, 
+        "value_bool": null, 
+        "value_range_max": null, 
+        "choice": null, 
+        "value_range_min": null, 
+        "schema": 1
+    }
+},
+{
+    "pk": 7, 
+    "model": "magazin.attribute", 
+    "fields": {
+        "value_date": null, 
+        "value_text": null, 
+        "entity_id": 7, 
+        "value_float": 6.0, 
+        "entity_type": 11, 
+        "value_bool": null, 
+        "value_range_max": null, 
+        "choice": null, 
+        "value_range_min": null, 
+        "schema": 3
+    }
+},
+{
+    "pk": 8, 
+    "model": "magazin.attribute", 
+    "fields": {
+        "value_date": null, 
+        "value_text": null, 
+        "entity_id": 7, 
+        "value_float": 450.0, 
+        "entity_type": 11, 
+        "value_bool": null, 
+        "value_range_max": null, 
+        "choice": null, 
+        "value_range_min": null, 
+        "schema": 6
+    }
+},
+{
+    "pk": 9, 
+    "model": "magazin.attribute", 
+    "fields": {
+        "value_date": null, 
+        "value_text": "Taiwan", 
+        "entity_id": 7, 
+        "value_float": null, 
+        "entity_type": 11, 
+        "value_bool": null, 
+        "value_range_max": null, 
+        "choice": null, 
+        "value_range_min": null, 
+        "schema": 5
+    }
+},
+{
+    "pk": 10, 
+    "model": "magazin.attribute", 
+    "fields": {
+        "value_date": null, 
+        "value_text": null, 
+        "entity_id": 7, 
+        "value_float": 350.0, 
+        "entity_type": 11, 
+        "value_bool": null, 
+        "value_range_max": null, 
+        "choice": null, 
+        "value_range_min": null, 
+        "schema": 2
+    }
+},
+{
+    "pk": 11, 
+    "model": "magazin.attribute", 
+    "fields": {
+        "value_date": null, 
+        "value_text": "Silver", 
+        "entity_id": 6, 
+        "value_float": null, 
+        "entity_type": 11, 
+        "value_bool": null, 
+        "value_range_max": null, 
+        "choice": null, 
+        "value_range_min": null, 
+        "schema": 1
+    }
+},
+{
+    "pk": 12, 
+    "model": "magazin.attribute", 
+    "fields": {
+        "value_date": null, 
+        "value_text": null, 
+        "entity_id": 6, 
+        "value_float": 450.0, 
+        "entity_type": 11, 
+        "value_bool": null, 
+        "value_range_max": null, 
+        "choice": null, 
+        "value_range_min": null, 
+        "schema": 6
+    }
+},
+{
+    "pk": 13, 
+    "model": "magazin.attribute", 
+    "fields": {
+        "value_date": null, 
+        "value_text": "China", 
+        "entity_id": 6, 
+        "value_float": null, 
+        "entity_type": 11, 
+        "value_bool": null, 
+        "value_range_max": null, 
+        "choice": null, 
+        "value_range_min": null, 
+        "schema": 5
+    }
+},
+{
+    "pk": 14, 
+    "model": "magazin.attribute", 
+    "fields": {
+        "value_date": null, 
+        "value_text": null, 
+        "entity_id": 6, 
+        "value_float": 150.0, 
+        "entity_type": 11, 
+        "value_bool": null, 
+        "value_range_max": null, 
+        "choice": null, 
+        "value_range_min": null, 
+        "schema": 2
+    }
+},
+{
+    "pk": 15, 
+    "model": "magazin.attribute", 
+    "fields": {
+        "value_date": null, 
+        "value_text": "Black", 
+        "entity_id": 4, 
+        "value_float": null, 
+        "entity_type": 11, 
+        "value_bool": null, 
+        "value_range_max": null, 
+        "choice": null, 
+        "value_range_min": null, 
+        "schema": 1
+    }
+},
+{
+    "pk": 16, 
+    "model": "magazin.attribute", 
+    "fields": {
+        "value_date": null, 
+        "value_text": null, 
+        "entity_id": 4, 
+        "value_float": 50.0, 
+        "entity_type": 11, 
+        "value_bool": null, 
+        "value_range_max": null, 
+        "choice": null, 
+        "value_range_min": null, 
+        "schema": 3
+    }
+},
+{
+    "pk": 17, 
+    "model": "magazin.attribute", 
+    "fields": {
+        "value_date": null, 
+        "value_text": null, 
+        "entity_id": 4, 
+        "value_float": 1200.0, 
+        "entity_type": 11, 
+        "value_bool": null, 
+        "value_range_max": null, 
+        "choice": null, 
+        "value_range_min": null, 
+        "schema": 6
+    }
+},
+{
+    "pk": 18, 
+    "model": "magazin.attribute", 
+    "fields": {
+        "value_date": null, 
+        "value_text": "Japan", 
+        "entity_id": 4, 
+        "value_float": null, 
+        "entity_type": 11, 
+        "value_bool": null, 
+        "value_range_max": null, 
+        "choice": null, 
+        "value_range_min": null, 
+        "schema": 5
+    }
+},
+{
+    "pk": 19, 
+    "model": "magazin.attribute", 
+    "fields": {
+        "value_date": null, 
+        "value_text": null, 
+        "entity_id": 4, 
+        "value_float": 10000.0, 
+        "entity_type": 11, 
+        "value_bool": null, 
+        "value_range_max": null, 
+        "choice": null, 
+        "value_range_min": null, 
+        "schema": 2
+    }
+},
+{
+    "pk": 20, 
+    "model": "magazin.attribute", 
+    "fields": {
+        "value_date": null, 
+        "value_text": "Black", 
+        "entity_id": 3, 
+        "value_float": null, 
+        "entity_type": 11, 
+        "value_bool": null, 
+        "value_range_max": null, 
+        "choice": null, 
+        "value_range_min": null, 
+        "schema": 1
+    }
+},
+{
+    "pk": 21, 
+    "model": "magazin.attribute", 
+    "fields": {
+        "value_date": null, 
+        "value_text": null, 
+        "entity_id": 3, 
+        "value_float": 50.0, 
+        "entity_type": 11, 
+        "value_bool": null, 
+        "value_range_max": null, 
+        "choice": null, 
+        "value_range_min": null, 
+        "schema": 3
+    }
+},
+{
+    "pk": 22, 
+    "model": "magazin.attribute", 
+    "fields": {
+        "value_date": null, 
+        "value_text": null, 
+        "entity_id": 3, 
+        "value_float": 1300.0, 
+        "entity_type": 11, 
+        "value_bool": null, 
+        "value_range_max": null, 
+        "choice": null, 
+        "value_range_min": null, 
+        "schema": 6
+    }
+},
+{
+    "pk": 23, 
+    "model": "magazin.attribute", 
+    "fields": {
+        "value_date": null, 
+        "value_text": "Japan", 
+        "entity_id": 3, 
+        "value_float": null, 
+        "entity_type": 11, 
+        "value_bool": null, 
+        "value_range_max": null, 
+        "choice": null, 
+        "value_range_min": null, 
+        "schema": 5
+    }
+},
+{
+    "pk": 24, 
+    "model": "magazin.attribute", 
+    "fields": {
+        "value_date": null, 
+        "value_text": null, 
+        "entity_id": 3, 
+        "value_float": 11000.0, 
+        "entity_type": 11, 
+        "value_bool": null, 
+        "value_range_max": null, 
+        "choice": null, 
+        "value_range_min": null, 
+        "schema": 2
+    }
+},
+{
+    "pk": 25, 
+    "model": "magazin.attribute", 
+    "fields": {
+        "value_date": null, 
+        "value_text": "Black/Silver", 
+        "entity_id": 2, 
+        "value_float": null, 
+        "entity_type": 11, 
+        "value_bool": null, 
+        "value_range_max": null, 
+        "choice": null, 
+        "value_range_min": null, 
+        "schema": 1
+    }
+},
+{
+    "pk": 26, 
+    "model": "magazin.attribute", 
+    "fields": {
+        "value_date": null, 
+        "value_text": null, 
+        "entity_id": 2, 
+        "value_float": 700.0, 
+        "entity_type": 11, 
+        "value_bool": null, 
+        "value_range_max": null, 
+        "choice": null, 
+        "value_range_min": null, 
+        "schema": 6
+    }
+},
+{
+    "pk": 27, 
+    "model": "magazin.attribute", 
+    "fields": {
+        "value_date": null, 
+        "value_text": "Core i3", 
+        "entity_id": 2, 
+        "value_float": null, 
+        "entity_type": 11, 
+        "value_bool": null, 
+        "value_range_max": null, 
+        "choice": null, 
+        "value_range_min": null, 
+        "schema": 4
+    }
+},
+{
+    "pk": 28, 
+    "model": "magazin.attribute", 
+    "fields": {
+        "value_date": null, 
+        "value_text": "China", 
+        "entity_id": 2, 
+        "value_float": null, 
+        "entity_type": 11, 
+        "value_bool": null, 
+        "value_range_max": null, 
+        "choice": null, 
+        "value_range_min": null, 
+        "schema": 5
+    }
+},
+{
+    "pk": 29, 
+    "model": "magazin.attribute", 
+    "fields": {
+        "value_date": null, 
+        "value_text": null, 
+        "entity_id": 2, 
+        "value_float": 5000.0, 
+        "entity_type": 11, 
+        "value_bool": null, 
+        "value_range_max": null, 
+        "choice": null, 
+        "value_range_min": null, 
+        "schema": 2
+    }
+},
+{
+    "pk": 30, 
+    "model": "magazin.attribute", 
+    "fields": {
+        "value_date": null, 
+        "value_text": "China", 
+        "entity_id": 1, 
+        "value_float": null, 
+        "entity_type": 11, 
+        "value_bool": null, 
+        "value_range_max": null, 
+        "choice": null, 
+        "value_range_min": null, 
+        "schema": 1
+    }
+},
+{
+    "pk": 31, 
+    "model": "magazin.attribute", 
+    "fields": {
+        "value_date": null, 
+        "value_text": null, 
+        "entity_id": 1, 
+        "value_float": 500.0, 
+        "entity_type": 11, 
+        "value_bool": null, 
+        "value_range_max": null, 
+        "choice": null, 
+        "value_range_min": null, 
+        "schema": 6
+    }
+},
+{
+    "pk": 32, 
+    "model": "magazin.attribute", 
+    "fields": {
+        "value_date": null, 
+        "value_text": "Core i5", 
+        "entity_id": 1, 
+        "value_float": null, 
+        "entity_type": 11, 
+        "value_bool": null, 
+        "value_range_max": null, 
+        "choice": null, 
+        "value_range_min": null, 
+        "schema": 4
+    }
+},
+{
+    "pk": 33, 
+    "model": "magazin.attribute", 
+    "fields": {
+        "value_date": null, 
+        "value_text": "China", 
+        "entity_id": 1, 
+        "value_float": null, 
+        "entity_type": 11, 
+        "value_bool": null, 
+        "value_range_max": null, 
+        "choice": null, 
+        "value_range_min": null, 
+        "schema": 5
+    }
+},
+{
+    "pk": 34, 
+    "model": "magazin.attribute", 
+    "fields": {
+        "value_date": null, 
+        "value_text": null, 
+        "entity_id": 1, 
+        "value_float": 1500.0, 
+        "entity_type": 11, 
+        "value_bool": null, 
+        "value_range_max": null, 
+        "choice": null, 
+        "value_range_min": null, 
+        "schema": 2
+    }
+},
+{
+    "pk": 1, 
     "model": "magazin.goods", 
     "fields": {
         "category": 7, 
@@ -224,6 +888,42 @@
         "category": 4, 
         "receipt_date": "2014-05-10T09:18:43Z", 
         "name": "Bravia X9"
+    }
+},
+{
+    "pk": 5, 
+    "model": "magazin.goods", 
+    "fields": {
+        "category": 5, 
+        "receipt_date": "2014-05-10T20:28:00Z", 
+        "name": "Sony Walkman"
+    }
+},
+{
+    "pk": 6, 
+    "model": "magazin.goods", 
+    "fields": {
+        "category": 5, 
+        "receipt_date": "2014-05-10T20:28:18Z", 
+        "name": "Apple iPod"
+    }
+},
+{
+    "pk": 7, 
+    "model": "magazin.goods", 
+    "fields": {
+        "category": 6, 
+        "receipt_date": "2014-05-10T20:28:34Z", 
+        "name": "Garmin Nafigator"
+    }
+},
+{
+    "pk": 8, 
+    "model": "magazin.goods", 
+    "fields": {
+        "category": 6, 
+        "receipt_date": "2014-05-10T20:28:56Z", 
+        "name": "TomTom navigator"
     }
 },
 {
@@ -533,12 +1233,48 @@
         "is_active": true, 
         "is_superuser": true, 
         "is_staff": true, 
-        "last_login": "2014-05-10T05:13:02.668Z", 
+        "last_login": "2014-05-10T16:27:41.073Z", 
         "groups": [], 
         "user_permissions": [], 
         "password": "pbkdf2_sha256$12000$Ha2oYNSbDrtV$4JDzG4vQZU5ecHk63y0udha0xcTI2CRq4oU2qq7X2D0=", 
         "email": "admin@localhost", 
         "date_joined": "2014-05-10T05:12:44.362Z"
+    }
+},
+{
+    "pk": 2, 
+    "model": "auth.user", 
+    "fields": {
+        "username": "tester", 
+        "first_name": "", 
+        "last_name": "", 
+        "is_active": true, 
+        "is_superuser": false, 
+        "is_staff": false, 
+        "last_login": "2014-05-10T06:59:33.061Z", 
+        "groups": [], 
+        "user_permissions": [], 
+        "password": "pbkdf2_sha256$12000$sbbbiv0BfBKm$trcD/7/R26xhqWVQCITeJXWlUgs07M5sFw92Qn60vsg=", 
+        "email": "", 
+        "date_joined": "2014-05-10T06:59:32.683Z"
+    }
+},
+{
+    "pk": 3, 
+    "model": "auth.user", 
+    "fields": {
+        "username": "qwerty", 
+        "first_name": "", 
+        "last_name": "", 
+        "is_active": true, 
+        "is_superuser": false, 
+        "is_staff": false, 
+        "last_login": "2014-05-10T07:01:26.042Z", 
+        "groups": [], 
+        "user_permissions": [], 
+        "password": "pbkdf2_sha256$12000$xWVVoXp1RcgQ$Yj50m9JFijQVLOqC+b5DGAKEBCRHTJnI1Bhu/uGkj2o=", 
+        "email": "", 
+        "date_joined": "2014-05-10T07:01:25.718Z"
     }
 },
 {
@@ -693,6 +1429,227 @@
         "object_repr": "Bravia W600B", 
         "object_id": "3", 
         "change_message": "Changed name.", 
+        "user": 1, 
+        "content_type": 11
+    }
+},
+{
+    "pk": 13, 
+    "model": "admin.logentry", 
+    "fields": {
+        "action_flag": 1, 
+        "action_time": "2014-05-10T16:28:04.360Z", 
+        "object_repr": "Sony Walkman", 
+        "object_id": "5", 
+        "change_message": "", 
+        "user": 1, 
+        "content_type": 11
+    }
+},
+{
+    "pk": 14, 
+    "model": "admin.logentry", 
+    "fields": {
+        "action_flag": 1, 
+        "action_time": "2014-05-10T16:28:19.911Z", 
+        "object_repr": "Apple iPod", 
+        "object_id": "6", 
+        "change_message": "", 
+        "user": 1, 
+        "content_type": 11
+    }
+},
+{
+    "pk": 15, 
+    "model": "admin.logentry", 
+    "fields": {
+        "action_flag": 1, 
+        "action_time": "2014-05-10T16:28:37.006Z", 
+        "object_repr": "Garmin Nafigator", 
+        "object_id": "7", 
+        "change_message": "", 
+        "user": 1, 
+        "content_type": 11
+    }
+},
+{
+    "pk": 16, 
+    "model": "admin.logentry", 
+    "fields": {
+        "action_flag": 1, 
+        "action_time": "2014-05-10T16:28:57.639Z", 
+        "object_repr": "TomTom navigator", 
+        "object_id": "8", 
+        "change_message": "", 
+        "user": 1, 
+        "content_type": 11
+    }
+},
+{
+    "pk": 17, 
+    "model": "admin.logentry", 
+    "fields": {
+        "action_flag": 1, 
+        "action_time": "2014-05-10T16:30:24.661Z", 
+        "object_repr": "Color (text)", 
+        "object_id": "1", 
+        "change_message": "", 
+        "user": 1, 
+        "content_type": 8
+    }
+},
+{
+    "pk": 18, 
+    "model": "admin.logentry", 
+    "fields": {
+        "action_flag": 1, 
+        "action_time": "2014-05-10T16:30:47.878Z", 
+        "object_repr": "Weight (number)", 
+        "object_id": "2", 
+        "change_message": "", 
+        "user": 1, 
+        "content_type": 8
+    }
+},
+{
+    "pk": 19, 
+    "model": "admin.logentry", 
+    "fields": {
+        "action_flag": 1, 
+        "action_time": "2014-05-10T16:31:15.823Z", 
+        "object_repr": "Diagonal (number)", 
+        "object_id": "3", 
+        "change_message": "", 
+        "user": 1, 
+        "content_type": 8
+    }
+},
+{
+    "pk": 20, 
+    "model": "admin.logentry", 
+    "fields": {
+        "action_flag": 1, 
+        "action_time": "2014-05-10T16:31:39.378Z", 
+        "object_repr": "Processor (text)", 
+        "object_id": "4", 
+        "change_message": "", 
+        "user": 1, 
+        "content_type": 8
+    }
+},
+{
+    "pk": 21, 
+    "model": "admin.logentry", 
+    "fields": {
+        "action_flag": 1, 
+        "action_time": "2014-05-10T16:32:41.704Z", 
+        "object_repr": "Region (text)", 
+        "object_id": "5", 
+        "change_message": "", 
+        "user": 1, 
+        "content_type": 8
+    }
+},
+{
+    "pk": 22, 
+    "model": "admin.logentry", 
+    "fields": {
+        "action_flag": 1, 
+        "action_time": "2014-05-10T16:33:16.915Z", 
+        "object_repr": "Price (number) required", 
+        "object_id": "6", 
+        "change_message": "", 
+        "user": 1, 
+        "content_type": 8
+    }
+},
+{
+    "pk": 23, 
+    "model": "admin.logentry", 
+    "fields": {
+        "action_flag": 2, 
+        "action_time": "2014-05-10T16:34:05.700Z", 
+        "object_repr": "TomTom navigator", 
+        "object_id": "8", 
+        "change_message": "Changed color, diagonal, price, region and weight.", 
+        "user": 1, 
+        "content_type": 11
+    }
+},
+{
+    "pk": 24, 
+    "model": "admin.logentry", 
+    "fields": {
+        "action_flag": 2, 
+        "action_time": "2014-05-10T16:34:32.612Z", 
+        "object_repr": "Garmin Nafigator", 
+        "object_id": "7", 
+        "change_message": "Changed color, diagonal, price, region and weight.", 
+        "user": 1, 
+        "content_type": 11
+    }
+},
+{
+    "pk": 25, 
+    "model": "admin.logentry", 
+    "fields": {
+        "action_flag": 2, 
+        "action_time": "2014-05-10T16:34:53.727Z", 
+        "object_repr": "Apple iPod", 
+        "object_id": "6", 
+        "change_message": "Changed color, price, region and weight.", 
+        "user": 1, 
+        "content_type": 11
+    }
+},
+{
+    "pk": 26, 
+    "model": "admin.logentry", 
+    "fields": {
+        "action_flag": 2, 
+        "action_time": "2014-05-10T16:35:28.357Z", 
+        "object_repr": "Bravia X9", 
+        "object_id": "4", 
+        "change_message": "Changed color, diagonal, price, region and weight.", 
+        "user": 1, 
+        "content_type": 11
+    }
+},
+{
+    "pk": 27, 
+    "model": "admin.logentry", 
+    "fields": {
+        "action_flag": 2, 
+        "action_time": "2014-05-10T16:35:51.170Z", 
+        "object_repr": "Bravia W600B", 
+        "object_id": "3", 
+        "change_message": "Changed color, diagonal, price, region and weight.", 
+        "user": 1, 
+        "content_type": 11
+    }
+},
+{
+    "pk": 28, 
+    "model": "admin.logentry", 
+    "fields": {
+        "action_flag": 2, 
+        "action_time": "2014-05-10T16:36:33.885Z", 
+        "object_repr": "Lenovo IdeaCentre Horizon", 
+        "object_id": "2", 
+        "change_message": "Changed color, price, processor, region and weight.", 
+        "user": 1, 
+        "content_type": 11
+    }
+},
+{
+    "pk": 29, 
+    "model": "admin.logentry", 
+    "fields": {
+        "action_flag": 2, 
+        "action_time": "2014-05-10T16:37:03.393Z", 
+        "object_repr": "Lenovo IdeaCentre Q190", 
+        "object_id": "1", 
+        "change_message": "Changed color, price, processor, region and weight.", 
         "user": 1, 
         "content_type": 11
     }
