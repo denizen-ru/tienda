@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ details.name }}{% endblock %}
+
+{% block main %}
+
+  <h2>{{ details.name }}</h2>
+  {% for key, value in details.params.items %}
+    <div>[{{ key }}]--[{{ value }}]</div>
+  {% endfor %}
+
+{% endblock %}

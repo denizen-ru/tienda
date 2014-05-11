@@ -7,4 +7,5 @@ urlpatterns = patterns('',
     url(r'^login/$', views.login, name='login'),
     url(r'^logout/$', views.logout, name='logout'),
     url(r'^(\d+)/$', views.view_goods, name='view_goods'),
+    url(r'^details/(\d+)/$', views.details, name='details'),
 )

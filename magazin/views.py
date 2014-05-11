@@ -7,7 +7,6 @@ from django.contrib.auth.decorators import login_required
 
 from models import Category, Goods
 
-import sys
 
 def home_page(request):
     return render(request, 'home.html',
@@ -59,5 +58,16 @@ def view_goods(request, category_id):
         goods = Goods.objects.filter(category__in=ids)
         categories = nodes.filter(id__in=ids)
     return render(request, 'home.html',
-                  {'nodes': nodes, 'goods': goods, 'categories': categories,},
+                  {'nodes': nodes, 'goods': goods, 'categories': categories, },
+                  context_instance=RequestContext(request))
+
+
+def details(request, goods_id):
+    nodes = Category.objects.all()
+    goods_details = Goods.objects.get(id=goods_id)
+    details = {'name': goods_details.name, 'params':
+              {x.schema.title: getattr(goods_details, x.schema.name) for x in goods_details.attrs.all()}}
+
+    return render(request, 'details.html',
+                  {'nodes': nodes, 'details': details},
                   context_instance=RequestContext(request))

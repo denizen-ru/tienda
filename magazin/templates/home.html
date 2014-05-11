@@ -13,13 +13,13 @@
           <div><b>{{ category.name }}</b></div>
           {% for element in goods %}
             {% if element.category.id == category.id %}
-              <div>{{ element.name }}</div>
+              <div><a href="{% url 'magazin:details' element.id %}">{{ element.name }}</a></div>
             {% endif %}
           {% endfor %}
         {% endfor %}
       {% else %}
         {% for element in goods %}
-          <div>{{ element.name }}</div>
+          <div><a href="{% url 'magazin:details' element.id %}">{{ element.name }}</a></div>
         {% endfor %}
       {% endif %}
     {% else %}
