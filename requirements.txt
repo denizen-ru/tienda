@@ -1,6 +1,4 @@
 Django==1.6.4
-argparse==1.2.1
-distribute==0.6.24
 django-autoslug==1.7.2
 django-autoslug-field==0.2.3
 django-debug-toolbar==1.2
@@ -10,3 +8,6 @@ eav-django==1.4.5
 six==1.6.1
 sqlparse==0.1.11
 wsgiref==0.1.2
+dj-database-url==0.3.0
+dj-static==0.0.5
+psycopg2==2.5.2
