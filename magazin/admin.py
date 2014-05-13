@@ -5,7 +5,7 @@ from eav.admin import BaseEntityAdmin, BaseSchemaAdmin
 
 from models import Category, Goods, Schema, Choice
 from forms import GoodsForm
-import sys
+
 
 class CategoryAdmin(DjangoMpttAdmin):
     pass
@@ -21,11 +21,10 @@ class GoodsAdmin(BaseEntityAdmin):
         return super(GoodsAdmin, self).formfield_for_foreignkey(db_field, request, **kwargs)
 
     def render_change_form(self, request, context, **kwargs):
-        # context['itswork'] = simplejson.dumps(Category.objects.all())
         categories = {}
         for category in Category.objects.all():
-            categories[category.id] = [x.name for x in Schema.objects.filter(category=category.id)]
-        print >> sys.stderr, categories
+            categories[category.id] = [
+                x.name for x in Schema.objects.filter(category=category.id)]
         context['categories'] = simplejson.dumps(categories)
         return super(GoodsAdmin, self).render_change_form(request, context, **kwargs)
 
