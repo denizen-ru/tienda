@@ -48,4 +48,4 @@ class Goods(BaseEntity):
     def get_schemata_for_instance(self, qs):
         if hasattr(self, 'category'):
             return qs.filter(category=self.category)
-        return []
+        return qs

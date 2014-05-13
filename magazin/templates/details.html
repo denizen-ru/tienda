@@ -6,7 +6,10 @@
 
   <h2>{{ details.name }}</h2>
   {% for key, value in details.params.items %}
-    <div>[{{ key }}]--[{{ value }}]</div>
+    <div class="row">
+      <div class="col-md-2 charkey">{{ key }}:</div>
+      <div class="col-md-3 charvalue">{{ value }}</div>
+    </div>
   {% endfor %}
 
 {% endblock %}

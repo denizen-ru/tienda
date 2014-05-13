@@ -79,3 +79,16 @@ div.bordered {
 li {
   list-style-type: disc;
 }
+
+.charkey {
+  background-color: #eee;
+  border: 1px solid #888;
+  border-radius: 3px;
+  text-align: right;
+}
+
+.charvalue {
+  background-color: #eee;
+  border: 1px solid #888;
+  border-radius: 3px;
+}
